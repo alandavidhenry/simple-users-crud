@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
-  <body>
+  <body> -->
+    <% layout('layouts/boilerplate') %>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-  </body>
-</html>
+    <p><a href="/login">Log In</a></p>
+    <p><a href="">Log Out</a></p>
+    <p><a href="/users/new-user">Make New User</a></p>
+    <p><a href="/users">View Users</a></p>

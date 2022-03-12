@@ -3,17 +3,22 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('users');
 });
 
 /* GET user. */
 router.get('/:id', function(req, res, next) {
-  res.send('respond with a resource');
+  res.send('view user profile');
 });
 
 /* GET user. */
-router.get('/:id', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/new-user', function(req, res, next) {
+  res.render('new-user');
+});
+
+/* GET user. */
+router.get('/:id/edit', function(req, res, next) {
+  res.send('edit user profile');
 });
 
 module.exports = router;
